@@ -1,0 +1,20 @@
+{
+  "name": "mediagrab",
+  "version": "0.1.0",
+  "description": "CLI tool to find and download M3U8/HLS streams from webpages",
+  "type": "module",
+  "bin": {
+    "mediagrab": "./bin/mediagrab.js"
+  },
+  "scripts": {
+    "test": "node --test test/m3u8.test.js test/scraper.test.js test/downloader.test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "cli-progress": "^3.12.0",
+    "commander": "^14.0.3"
+  }
+}
